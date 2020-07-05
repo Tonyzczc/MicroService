@@ -2,8 +2,21 @@ spring:
   application:
     name: eureka_server
   profiles:
-    active: 7902
+    active: 6999
 
+---
+spring:
+  profiles: 6999
+server:
+  port: 6999
+eureka:
+  instance:
+    hostname: eureka-6999
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka-6999:6999/eureka/
+    fetch-registry: false
 ---
 spring:
   profiles: 7900

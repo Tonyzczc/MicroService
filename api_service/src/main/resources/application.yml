@@ -6,6 +6,6 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7900/eureka/
+      defaultZone: http://localhost:6999/eureka/
   instance:
-    hostname: api-passenger
+    hostname: api-service
